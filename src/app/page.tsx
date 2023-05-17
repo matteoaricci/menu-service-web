@@ -1,5 +1,3 @@
-export default function Home() {
-  console.log("howdy")
-  console.error("error!")
-  return <main></main>;
+export default function Home({ children }: { children: React.ReactNode }) {
+  return <main>{children}</main>;
 }

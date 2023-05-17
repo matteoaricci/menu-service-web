@@ -1,17 +1,11 @@
-export interface ItemIngredient {
-    id: number
-    name: string
-    item_id: number
+import { Standard } from "./helper"
+
+export interface ItemIngredient extends Standard {
+    itemId: string
     available: boolean
-    created_at: Date
-    updated_at: Date
 }
 
-export interface Item {
-    id: number
-    name: string
+export interface Item extends Standard {
     available: boolean
     ingredients: ItemIngredient[],
-    created_at: Date
-    updated_at: Date
 }

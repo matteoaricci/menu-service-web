@@ -1,19 +1,12 @@
 import { Item } from "./item"
+import { Standard } from "./helper"
 
-export interface MenuCategory {
-    id: number
-    name: string
+export interface MenuCategory extends Standard {
     menu_id: number
     items: Item[]
-    created_at: Date
-    updated_at: Date
 }
 
-export interface Menu {
-    id: number
-    name: string
+export interface Menu extends Standard {
     is_active: boolean
     categories: MenuCategory[]
-    created_at: Date
-    updated_at: Date
 }
