@@ -9,7 +9,7 @@
     "lint": "next lint",
     "prepare": "husky install",
     "test": "jest --watch",
-    "test:ci": "jest --ci"
+    "test:cover": "jest --watchAll --coverage coverageDirectory='./coverage'"
   },
   "dependencies": {
     "@types/node": "20.1.4",
