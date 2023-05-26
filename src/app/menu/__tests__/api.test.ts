@@ -27,6 +27,7 @@ describe("Menu", () => {
         fetchMock.mockResponseOnce(JSON.stringify(mockResponce), mockParams)
 
         const res = await getMenuById(id)
+
         expect(res).toEqual(mockResponce)
     })
 })
